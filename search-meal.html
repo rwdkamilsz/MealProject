@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MealProject</title>
+    <meta name="description" content="This is MealProject">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-secondary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">| MealProject |</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link " href="/">Random meal</a>
+                        <a class="nav-link active" aria-current="page"  href="search-meal.html">Search for specific meal</a>
+                        <a class="nav-link" href="ingredient-search.html">Search meal for main ingredient</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <section>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <div class="flex searchBox">
+                  
+                            <div class="search">
+                                <h3>
+                                    You know what you want to search?
+                                </h3>
+                                <div class="input-group mb-3">
+                                <input type="text" class="form-control searchBar" placeholder="type name of a meal">
+                                <button data-type="meal" class="btn btn-dark searchButton" type="button">Search</button>
+                            </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <div class="warningBox hide">
+        </div>
+
+    
+        <div class="card-group mealCard hide col-sm-10 offset-1" id="mealCard">
+            <div class="card ">
+                <div class="card-body" >
+                    <h1 class="card-title mealName">Title</h4>
+                        <h5 class="card-subtitle text-muted mealRegion">Subtitle</h5>
+                        <img class="img-thumbnail card-img-top mealImage" src="" alt="Card image cap">
+                </div>
+                
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <ul class="mealIngredients__list">
+        
+                    </ul>
+                    <hr>
+                    <p class="card-text mealInstructions"></p>
+        
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="dist/app.js"></script>
+
+</html>

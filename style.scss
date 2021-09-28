@@ -1,0 +1,98 @@
+body {
+  text-align: center;
+  margin: 0;
+  font-family: 'Open sans', sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+  background: #f4f4f4;
+  font-size: 1.2rem;
+  padding: .2rem;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  background-size: cover;
+
+  div,
+  span {
+    display: block;
+  }
+
+  section {
+    padding: 50px 0;
+  }
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  margin-bottom: 0.4em;
+}
+
+.hide {
+  display: none;
+}
+
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  div {
+    padding: .5rem;
+  }
+
+  @media screen and (min-width:991px) {
+    div {
+
+      padding: 1.5rem;
+    }
+  }
+}
+
+input {
+  display: inline-block;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  margin: 0;
+  box-shadow: 0px 0px 8px 1px gray
+}
+
+.inspirationBox {
+  border-bottom: 2px solid gray
+}
+
+.mealListing {
+  padding: 20px 0
+}
+
+
+@media (min-width: 991px) {
+  .mealListing {
+
+    -webkit-columns: 2;
+    columns: 2;
+  }
+
+  .flex {
+    flex-direction: row;
+  }
+
+  .inspirationBox {
+    border-bottom: 0;
+  }
+}
+
+.warningBox {
+  margin: 0 auto;
+  padding: .8rem;
+  min-width: 300px;
+  max-width: 65%;
+  border-radius: 10px;
+  background: white;
+  -webkit-backdrop-filter: opacity(30%);
+  backdrop-filter: opacity(30%);
+  color: red;
+}
